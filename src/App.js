@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import { View } from "react-native";
+import React from "react";
+import {
+  NavigationContainer,
+  DefaultTheme,
+  DarkTheme,
+} from "@react-navigation/native";
+// import { Text } from "@edvnz/components";
+import {
+  LightTheme as LightThemeColors,
+  DarkTheme as DarkThemeColors,
+} from "@edvnz/theme";
 
-function App() {
+import TextInput from "@edvnz/textinput";
+
+const customLightTheme = {
+  ...DefaultTheme.colors,
+  ...LightThemeColors,
+  colors: {
+    ...DefaultTheme.colors,
+    ...LightThemeColors.colors,
+  },
+};
+
+const customDarkTheme = {
+  ...DarkTheme.colors,
+  ...DarkThemeColors,
+  colors: {
+    ...DarkTheme.colors,
+    ...DarkThemeColors.colors,
+  },
+};
+
+console.log(DarkThemeColors)
+
+const theme = DarkTheme ? customDarkTheme : customLightTheme;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NavigationContainer theme={theme}>
+      <View
+        style={{
+          backgroundColor: theme.colors.backgroundSurface1,
+          height: "100%",
+          width: "100%",
+        }}
+      >
+        {/* <Text>App</Text> */}
+        <TextInput />
+      </View>
+
+    </NavigationContainer>
   );
-}
+};
 
 export default App;
