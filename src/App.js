@@ -11,7 +11,7 @@ import {
   DarkTheme as DarkThemeColors,
 } from "@edvnz/theme";
 
-import TextInput from "@edvnz/textinput";
+import { TextInput } from "@edvnz/components";
 
 const customLightTheme = {
   ...DefaultTheme.colors,
@@ -31,7 +31,7 @@ const customDarkTheme = {
   },
 };
 
-console.log(DarkThemeColors)
+console.log(DarkThemeColors);
 
 const theme = DarkTheme ? customDarkTheme : customLightTheme;
 
@@ -48,7 +48,6 @@ const App = () => {
         {/* <Text>App</Text> */}
         <TextInput />
       </View>
-
     </NavigationContainer>
   );
 };
