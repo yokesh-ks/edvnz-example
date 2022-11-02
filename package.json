@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@edvnz/components": "^1.0.5",
+    "@edvnz/bottom-sheet": "^1.0.2",
+    "@edvnz/components": "^1.0.7",
     "@edvnz/native-icons": "^1.0.0",
-    "@edvnz/provider": "^1.0.0",
+    "@edvnz/provider": "^1.0.1",
     "@edvnz/theme": "^1.0.2",
     "@react-navigation/native": "^6.0.13",
     "@testing-library/jest-dom": "^5.16.5",

@@ -1239,17 +1239,24 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz#1bfafe4b7ed0f3e4105837e056e0a89b108ebe36"
   integrity sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==
 
-"@edvnz/components@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@edvnz/components/-/components-1.0.5.tgz#5ec326441e77d2bf35f63b20ae6d89c3f536764b"
-  integrity sha512-QnobMHPZuCMaXrQs9becKJb5jnnWcJM8182tDgjt+rLxTGtKF/Np8tC44ZcYVt2tOt3012t0Shj0BJCxSlieVQ==
+"@edvnz/bottom-sheet@1.0.2", "@edvnz/bottom-sheet@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@edvnz/bottom-sheet/-/bottom-sheet-1.0.2.tgz#e2bca1f65ff7a4857e607f8b677a2e93c3b798f6"
+  integrity sha512-JZ96Us/lcvE5kRHg3ZrmUbNVLgmoWmmP4C7Ec6hc05btRqXDhlGnp4zFglLjLhOUEfKqblE0QwGGRyWiVQvaNQ==
+
+"@edvnz/components@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@edvnz/components/-/components-1.0.7.tgz#afca4a66fb7b9a527f0771167814689f0b47cefe"
+  integrity sha512-RHt/5CsN0oZ/tGl5AiQXMEFEXdpJXWUOdgTiuaGxp+RF7A5mLjl5EUjLe3IwEqT4uy9rFO3al3vpSaayUUU83w==
   dependencies:
+    "@edvnz/bottom-sheet" "1.0.2"
     "@edvnz/native-icons" "^1.0.0"
     "@edvnz/provider" "1.0.0"
     "@edvnz/theme" "1.0.2"
     "@edvnz/utils" "1.0.1"
     prop-types "^15.8.1"
     react-native-linear-gradient "^2.5.6"
+    react-native-web-linear-gradient "^1.1.2"
 
 "@edvnz/native-icons@^1.0.0":
   version "1.0.0"
@@ -1259,10 +1266,15 @@
     prop-types "^15.8.1"
     react-native-svg "^12.1.1"
 
-"@edvnz/provider@1.0.0", "@edvnz/provider@^1.0.0":
+"@edvnz/provider@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@edvnz/provider/-/provider-1.0.0.tgz#53a7309b1ba80f86bb3c2a6222df24a6c91380e4"
   integrity sha512-c3mnYt3DnoiyWZT4Sh7iloG0C4SIbJ/G/PnaPpH8UOFXD0acsEkNyKddvfjJPlHzJ48Kedm7uDAmF3A6QGOh0g==
+
+"@edvnz/provider@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@edvnz/provider/-/provider-1.0.1.tgz#b43b338ff57fac64ce69186ac5d91acee2dc8667"
+  integrity sha512-8XpPiOAdZjszVEYyU/Uya1KJNSGOZy52+Vn6z2RIsKiljBVWOeVGCircw6X8i7Ft+kmg9q7z99go+ePUjGGllg==
 
 "@edvnz/theme@1.0.2", "@edvnz/theme@^1.0.2":
   version "1.0.2"
@@ -9337,6 +9349,11 @@ react-native-svg@^12.1.1:
   dependencies:
     css-select "^5.1.0"
     css-tree "^1.1.3"
+
+react-native-web-linear-gradient@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-web-linear-gradient/-/react-native-web-linear-gradient-1.1.2.tgz#33f85f7085a0bb5ffa5106faf02ed105b92a9ed7"
+  integrity sha512-SmUnpwT49CEe78pXvIvYf72Es8Pv+ZYKCnEOgb2zAKpEUDMo0+xElfRJhwt5nfI8krJ5WbFPKnoDgD0uUjAN1A==
 
 react-native-web@^0.18.9:
   version "0.18.9"
