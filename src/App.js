@@ -47,10 +47,12 @@ const App = () => {
     setTheme(isDarkTheme ? customDarkTheme : customLightTheme);
   }, [isDarkTheme]);
 
+  const value = { theme }
+
   console.log(theme);
   return (
     <NavigationContainer theme={theme}>
-      <EdvnzTheme.Provider value={theme}>
+      <EdvnzTheme.Provider value={value}>
         <View
           style={{
             backgroundColor: theme.colors.backgroundSurface1,

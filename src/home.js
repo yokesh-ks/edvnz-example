@@ -8,7 +8,7 @@ import { Icon } from "@edvnz/native-icons";
 import { spacing } from "@edvnz/theme";
 
 const Home = () => {
-  const theme = useContext(EdvnzTheme);
+  const { theme } = useContext(EdvnzTheme);
   const variants = Text.variants;
   console.log(variants);
   console.log({ theme });
@@ -20,7 +20,9 @@ const Home = () => {
         {variants?.map((m) => (
           <Text variant={m}>{m}</Text>
         ))}
-        <Text variant={"display1"}>Display</Text>
+        <Text variant={"display1"}>
+          Display
+        </Text>
         <TextInput />
       </Layout>
     </>

@@ -5,21 +5,21 @@ import { Layout } from "../container/Layout";
 import EdvnzTheme from "@edvnz/provider";
 
 const Header = (props) => {
-  // const theme = useContext(EdvnzTheme);
+  const { theme } = useContext(EdvnzTheme);
   const { isDarkTheme, setIsDarkTheme } = props;
   return (
     <View
       style={{
         height: 60,
         borderBottomWidth: 1,
-        // borderBottomColor: theme.colors.dividerShort,
+        borderBottomColor: theme.colors.dividerShort,
       }}
     >
       <Layout>
         <Row style={{ height: "100%" }}>
           <Text
             variant="heading2"
-            // color={theme.colors.textPrimary}
+            color={theme.colors.textPrimary}
             // style={{ fontFamily: "RocGrotesk-Bold" }}
           >
             EdvnzExample
