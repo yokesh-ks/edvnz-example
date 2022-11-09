@@ -9,26 +9,18 @@ import { spacing } from "@edvnz/theme";
 
 const Home = () => {
   const theme = useContext(EdvnzTheme);
+  const variants = Text.variants;
+  console.log(variants);
+  console.log({ theme });
+
   const [inputValue, setInputValue] = useState("");
   return (
     <>
       <Layout>
-        <TextInput
-          placeholder="Type to Search"
-          iconLeft={
-            <Icon
-              name="SearchIcon"
-              color={theme.colors.textPrimary}
-              width={17}
-              height={17}
-            />
-          }
-          inputFieldStyle={{
-            marginTop: spacing.spacing6,
-          }}
-          value={inputValue}
-          onChangeText={(text) => setInputValue(text)}
-        />
+        {variants?.map((m) => (
+          <Text variant={m}>{m}</Text>
+        ))}
+        <Text variant={"display1"}>Display</Text>
       </Layout>
     </>
   );

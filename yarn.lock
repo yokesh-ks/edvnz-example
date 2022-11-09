@@ -1244,14 +1244,14 @@
   resolved "https://registry.yarnpkg.com/@edvnz/bottom-sheet/-/bottom-sheet-1.0.2.tgz#e2bca1f65ff7a4857e607f8b677a2e93c3b798f6"
   integrity sha512-JZ96Us/lcvE5kRHg3ZrmUbNVLgmoWmmP4C7Ec6hc05btRqXDhlGnp4zFglLjLhOUEfKqblE0QwGGRyWiVQvaNQ==
 
-"@edvnz/components@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@edvnz/components/-/components-1.0.7.tgz#afca4a66fb7b9a527f0771167814689f0b47cefe"
-  integrity sha512-RHt/5CsN0oZ/tGl5AiQXMEFEXdpJXWUOdgTiuaGxp+RF7A5mLjl5EUjLe3IwEqT4uy9rFO3al3vpSaayUUU83w==
+"@edvnz/components@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@edvnz/components/-/components-1.0.10.tgz#ac7cc7c564f17e626daa0e3546cd9ac29fa03104"
+  integrity sha512-MfWlwYaeu9/TaYL4dvql07ZCBTL0SsJarItzz3niSMHhkXp1bfitaxFKXNYlkVgfSVAqD/o9OkMSAY7Y+Rr6BQ==
   dependencies:
     "@edvnz/bottom-sheet" "1.0.2"
     "@edvnz/native-icons" "^1.0.0"
-    "@edvnz/provider" "1.0.0"
+    "@edvnz/provider" "1.0.1"
     "@edvnz/theme" "1.0.2"
     "@edvnz/utils" "1.0.1"
     prop-types "^15.8.1"
@@ -1266,17 +1266,12 @@
     prop-types "^15.8.1"
     react-native-svg "^12.1.1"
 
-"@edvnz/provider@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@edvnz/provider/-/provider-1.0.0.tgz#53a7309b1ba80f86bb3c2a6222df24a6c91380e4"
-  integrity sha512-c3mnYt3DnoiyWZT4Sh7iloG0C4SIbJ/G/PnaPpH8UOFXD0acsEkNyKddvfjJPlHzJ48Kedm7uDAmF3A6QGOh0g==
-
-"@edvnz/provider@^1.0.1":
+"@edvnz/provider@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@edvnz/provider/-/provider-1.0.1.tgz#b43b338ff57fac64ce69186ac5d91acee2dc8667"
   integrity sha512-8XpPiOAdZjszVEYyU/Uya1KJNSGOZy52+Vn6z2RIsKiljBVWOeVGCircw6X8i7Ft+kmg9q7z99go+ePUjGGllg==
 
-"@edvnz/theme@1.0.2", "@edvnz/theme@^1.0.2":
+"@edvnz/theme@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@edvnz/theme/-/theme-1.0.2.tgz#6ae188c50e364db37abd03c7b71a4810a7883b64"
   integrity sha512-+hdF3lvBW/WVmI6CncpZRZN42xGyKcSRQKC0p0ZnjEgEOgspueuGcZLKu29qlmtdkOvgj0b+tHx/fYw4PyPDIQ==

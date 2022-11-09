@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "DMSans-Bold-Italic";
+  src: url(https://dev.edvanza.com/fonts2/DMSans-Bold-Italic.ttf)
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Bold";
+  src: url(https://dev.edvanza.com/fonts2/DMSans-Bold.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Italic";
+  src: url(https://dev.edvanza.com/fonts2/DMSans-Italic.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Medium-Italic";
+  src: url(https://dev.edvanza.com/fonts2/DMSans-Medium-Italic.ttf)
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: url(https://dev.edvanza.com/fonts2/DMSans-Medium.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url(https://dev.edvanza.com/fonts2/DMSans-Regular.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RocGrotesk-Bold";
+  src: url(https://dev.edvanza.com/fonts2/RocGrotesk-Bold.otf)
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RocGrotesk-Regular";
+  src: url(https://dev.edvanza.com/fonts2/RocGrotesk-Regular.ttf)
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+#root,
+#root > div {
+  font-family: "DM-Sans-Regular", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "DM-Sans-Regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
