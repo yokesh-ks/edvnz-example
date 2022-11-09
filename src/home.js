@@ -21,6 +21,7 @@ const Home = () => {
           <Text variant={m}>{m}</Text>
         ))}
         <Text variant={"display1"}>Display</Text>
+        <TextInput />
       </Layout>
     </>
   );

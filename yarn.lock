@@ -1244,10 +1244,10 @@
   resolved "https://registry.yarnpkg.com/@edvnz/bottom-sheet/-/bottom-sheet-1.0.2.tgz#e2bca1f65ff7a4857e607f8b677a2e93c3b798f6"
   integrity sha512-JZ96Us/lcvE5kRHg3ZrmUbNVLgmoWmmP4C7Ec6hc05btRqXDhlGnp4zFglLjLhOUEfKqblE0QwGGRyWiVQvaNQ==
 
-"@edvnz/components@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@edvnz/components/-/components-1.0.10.tgz#ac7cc7c564f17e626daa0e3546cd9ac29fa03104"
-  integrity sha512-MfWlwYaeu9/TaYL4dvql07ZCBTL0SsJarItzz3niSMHhkXp1bfitaxFKXNYlkVgfSVAqD/o9OkMSAY7Y+Rr6BQ==
+"@edvnz/components@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@edvnz/components/-/components-1.0.11.tgz#ac63a3025a1f5ba2469d8595b6952b90e9a450bf"
+  integrity sha512-uhpa8v7eAHnOyePN57oHyeH8b9/dwwrPaLRY/GhFow3qGv4ZhewaetynI3zaSoxR9D3v3JMM6lzd9AOQ47SBsw==
   dependencies:
     "@edvnz/bottom-sheet" "1.0.2"
     "@edvnz/native-icons" "^1.0.0"
@@ -1266,7 +1266,7 @@
     prop-types "^15.8.1"
     react-native-svg "^12.1.1"
 
-"@edvnz/provider@1.0.1":
+"@edvnz/provider@1.0.1", "@edvnz/provider@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@edvnz/provider/-/provider-1.0.1.tgz#b43b338ff57fac64ce69186ac5d91acee2dc8667"
   integrity sha512-8XpPiOAdZjszVEYyU/Uya1KJNSGOZy52+Vn6z2RIsKiljBVWOeVGCircw6X8i7Ft+kmg9q7z99go+ePUjGGllg==
@@ -1276,6 +1276,14 @@
   resolved "https://registry.yarnpkg.com/@edvnz/theme/-/theme-1.0.2.tgz#6ae188c50e364db37abd03c7b71a4810a7883b64"
   integrity sha512-+hdF3lvBW/WVmI6CncpZRZN42xGyKcSRQKC0p0ZnjEgEOgspueuGcZLKu29qlmtdkOvgj0b+tHx/fYw4PyPDIQ==
   dependencies:
+    color "^4.2.3"
+
+"@edvnz/theme@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@edvnz/theme/-/theme-1.0.5.tgz#6a32d83af0f9957f6031e9a4ee089fdb6ad56f21"
+  integrity sha512-h6ngb7UE1B8gNbKEzVP8fWtgrNcLHg2ViVWHoa/6cFFpcgqTwMa0dq9Ozx5dcTNZx4w4IAF+QxRsP9Cuo0ZDpg==
+  dependencies:
+    "@font-face/browser" "^1.0.2"
     color "^4.2.3"
 
 "@edvnz/utils@1.0.1":
@@ -1308,6 +1316,22 @@
   integrity sha512-Inh0OoFVzO2PLvrUF8RZhY9NVDdg9DJHQ5YlvXhrGtQxSPzy2smS3TWzLAi+zlHSJNHSvi+1zYayLen2lGxjdA==
   dependencies:
     tslib "^2.0.1"
+
+"@font-face/browser@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@font-face/browser/-/browser-1.0.2.tgz#d2f8843734bae5d90eb2e0813c501704addbc2af"
+  integrity sha512-A/uLmqPsGw8bVYwqOw5FHZHkYpXqelMCfrDrP85MO9V8GGwukbDskaqB20BGO9//IRhbUomXNdfBfZEo9Rg8Rw==
+  dependencies:
+    "@font-face/core" "^1.0.0"
+
+"@font-face/core@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@font-face/core/-/core-1.0.1.tgz#79b0fe26e588f2783e1237a448af429be0aa761c"
+  integrity sha512-Hsr6pNZ6O4WHjI6Bm6Mu7lcbW/1YBwiHMUlwlx8Ukbtt0PwXOK/zdu/GOfj+3QOe+NvpBZU/wl2fDWiXS0Ns2g==
+  dependencies:
+    arrify "^2.0.1"
+    is-function "^1.0.1"
+    isobject "^4.0.0"
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
@@ -3015,6 +3039,11 @@ array.prototype.reduce@^1.0.4:
     es-abstract "^1.19.2"
     es-array-method-boxes-properly "^1.0.0"
     is-string "^1.0.7"
+
+arrify@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
+  integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
 
 asap@~2.0.3, asap@~2.0.6:
   version "2.0.6"
@@ -6231,6 +6260,11 @@ is-fullwidth-code-point@^3.0.0:
   resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz#f116f8064fe90b3f7844a38997c0b75051269f1d"
   integrity sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==
 
+is-function@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/is-function/-/is-function-1.0.2.tgz#4f097f30abf6efadac9833b17ca5dc03f8144e08"
+  integrity sha512-lw7DUp0aWXYg+CBCN+JKkcE0Q2RayZnSvnZBlwgxHBQhqt5pZNVy4Ri7H9GmmXkdu7LUthszM+Tor1u/2iBcpQ==
+
 is-generator-fn@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-generator-fn/-/is-generator-fn-2.1.0.tgz#7d140adc389aaf3011a8f2a2a4cfa6faadffb118"
@@ -6447,6 +6481,11 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==
+
+isobject@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/isobject/-/isobject-4.0.0.tgz#3f1c9155e73b192022a80819bacd0343711697b0"
+  integrity sha512-S/2fF5wH8SJA/kmwr6HYhK/RI/OkhD84k8ntalo0iJjZikgq1XFvR5M8NPT1x5F7fBwCG3qHfnzeP/Vh/ZxCUA==
 
 istanbul-lib-coverage@^3.0.0, istanbul-lib-coverage@^3.2.0:
   version "3.2.0"

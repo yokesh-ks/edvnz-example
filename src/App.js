@@ -13,6 +13,7 @@ import {
 } from "@edvnz/theme";
 import Home from "./home";
 import Header from "./components/Header";
+import { useEffect } from "react";
 
 // import { TextInput } from "@edvnz/components";
 
@@ -38,7 +39,15 @@ console.log(DarkThemeColors);
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
-  const theme = isDarkTheme ? customDarkTheme : customLightTheme;
+  const [theme, setTheme] = useState(
+    isDarkTheme ? customDarkTheme : customLightTheme
+  );
+
+  useEffect(() => {
+    setTheme(isDarkTheme ? customDarkTheme : customLightTheme);
+  }, [isDarkTheme]);
+
+  console.log(theme);
   return (
     <NavigationContainer theme={theme}>
       <EdvnzTheme.Provider value={theme}>
