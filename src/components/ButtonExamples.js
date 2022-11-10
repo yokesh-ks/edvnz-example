@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { Button, Text } from "@edvnz/components";
 
 import { spacing } from "@edvnz/theme";
+import EdvnzTheme from "@edvnz/provider";
+import { Icon } from "@edvnz/native-icons";
 
 const ButtonExamples = () => {
+  const { theme } = useContext(EdvnzTheme);
   return (
     <div style={{ margin: spacing.spacing4 }}>
       <Text variant="heading1">Button components</Text>
@@ -59,6 +62,38 @@ const ButtonExamples = () => {
             style={{ width: "100px" }}
             textVariant="bodyBold1"
           />
+        </div>
+        <div style={{ margin: spacing.spacing3 }}>
+          <Button
+            label="Sign In"
+            size="small"
+            style={{ width: "100px" }}
+            textVariant="bodyBold1"
+            iconLeft={
+              <Icon
+                name="LockIcon"
+                width={12}
+                height={12}
+                color={theme.colors.backgroundSurface4}
+              />
+            }
+          />
+          <div style={{ margin: spacing.spacing3 }}>
+            <Button
+              label="Sign In"
+              size="small"
+              style={{ width: "100px" }}
+              textVariant="bodyBold1"
+              iconRight={
+                <Icon
+                  name="ChevronRightIcon"
+                  width={12}
+                  height={12}
+                  color={theme.colors.backgroundSurface4}
+                />
+              }
+            />
+          </div>
         </div>
       </div>
     </div>

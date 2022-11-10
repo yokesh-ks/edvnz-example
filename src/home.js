@@ -8,6 +8,7 @@ import { Icon } from "@edvnz/native-icons";
 import { spacing } from "@edvnz/theme";
 import TextExamples from "./components/TextExamples";
 import ButtonExamples from "./components/ButtonExamples";
+import TagExamples from "./components/TagExamples";
 
 const Home = () => {
   const { theme } = useContext(EdvnzTheme);
@@ -17,6 +18,7 @@ const Home = () => {
     <Layout>
       <TextExamples />
       <ButtonExamples />
+      <TagExamples />
     </Layout>
   );
 };
