@@ -1,8 +1,6 @@
-import { AppRegistry } from "react-native";
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
 
-AppRegistry.registerComponent("edvnz-example", () => App);
-AppRegistry.runApplication("edvnz-example", {
-  rootTag: document.getElementById("root"),
-});
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React, { useState } from "react";
 import {
   NavigationContainer,
@@ -47,25 +46,24 @@ const App = () => {
     setTheme(isDarkTheme ? customDarkTheme : customLightTheme);
   }, [isDarkTheme]);
 
-  const value = { theme }
+  const value = { theme };
 
   console.log(theme);
   return (
     <NavigationContainer theme={theme}>
       <EdvnzTheme.Provider value={value}>
-        <View
+        <div
           style={{
             backgroundColor: theme.colors.backgroundSurface1,
-            height: "100%",
+
             width: "100%",
-            maxHeight: "100vh",
-            minHeight: "100vh",
           }}
         >
           <Header isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
-          <Home />
-          {/* <TextInput /> */}
-        </View>
+          <div style={{ paddingTop: "100px" }}>
+            <Home />
+          </div>
+        </div>
       </EdvnzTheme.Provider>
     </NavigationContainer>
   );
